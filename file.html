@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+    </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="topLeftCornerStats">
+    <!--waav per click-->
+    <span id="clickAmount">1 waav per click.</span>
+    <br>
+    <!---waav per second-->
+    <span id="clickPS"></span>
+    </section>
+    <!--waav counter-->
+    <span id="waav">waav: 0</span>
+    <!--shop item description box-->
+    <span id="itemDesc">testestestest</span>
+    <!--shop-->
+    <table>
+        <tr>
+            <th>shop</th>
+        </tr>
+        <!--ADD 1 PER CLICK SHOP BUTTON-->
+        <tr>
+            <td>
+                <button id="add1Click" class="shopBTNS" onclick="add1()">
+    <div><span class="addedNums">+1</span> Click</div>
+    <span>Cost: </span><span id="item1Cost">10</span>
+    </button>
+            </td>
+        </tr>
+        <!--ADD 10 PER CLICK SHOP BUTTON-->
+        <tr>
+            <td>
+                <button id="add10Click" class="shopBTNS" onclick="add10()">
+    <div><span class="addedNums">+10</span> Clicks</div>
+    <span>Cost: </span><span id="item2Cost">100</span>
+    </button>
+            </td>
+        </tr>
+        <!--ADD 100 PER CLICK SHOP BUTTON-->
+        <tr>
+            <td>
+                <button id="add100Click" class="shopBTNS" onclick="add100()">
+    <div><span class="addedNums">+100</span> Clicks</div>
+    <span>Cost: </span><span id="item4Cost">1000</span>
+    </button>
+            </td>
+        </tr>
+        <!--ADD 500 PER CLICK SHOP BUTTON-->
+        <tr>
+            <td>
+                <button id="add500Click" class="shopBTNS" onclick="add500()">
+    <div><span class="addedNums">+500</span> Clicks</div>
+    <span>Cost: </span><span id="item6Cost">10000</span>
+    </button>
+            </td>
+        </tr>
+        <!--ADD 1 PER SECOND SHOP BUTTON-->
+        <tr>
+            <td>
+                <button id="onePS" class="shopBTNS" onclick="onePS()">
+    <div><span class="addedNums">+1</span> waav P/S</div>
+    <span>Cost: </span><span id="item3Cost">300</span>
+    </button>
+            </td>
+        </tr>
+        <!--ADD 10 PER SECOND SHOP BUTTON-->
+        <tr>
+            <td>
+                <button id="tenPS" class="shopBTNS" onclick="tenPS()">
+    <div><span class="addedNums">+10</span> waav P/S</div>
+    <span>Cost: </span><span id="item5Cost">5000</span>
+    </button>
+            </td>
+        </tr>
+    </table>
+    <!--waav clicker Button-->
+    <span id="critical"></span>
+    <br>
+    <button 
+    onclick="waavBTN()" id="waavBTN" class="tooltip">
+       </button>
+</body>
+</html>
