@@ -31,6 +31,27 @@ const waavBTN = () => {
 
 
 
+window.onload=function(){
+    let btnOne = document.getElementById("add1Click")
+    let test = document.getElementById("itemDesc")
+    btnOne.addEventListener("mouseenter", function(){
+        test.classList.add("is-active")
+        this.onmousemove = (e) =>{
+           let top = e.clientY-=25
+           test.style.top = top
+        }
+        test.style.scale = "1.3"
+        let int = setTimeout(count, 100)
+        function count (){
+            test.style.scale = '1'
+        }
+    });
+    btnOne.addEventListener("mouseleave", function(){
+        test.classList.remove("is-active")
+    });
+    
+}
+
     
 
 // Add 1 extra waav per click
