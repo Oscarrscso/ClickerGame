@@ -13,7 +13,7 @@ const waavBTN = () => {
     waavVal += waavPC;
     document.getElementById("waav").innerHTML = `waav: ${waavVal}`
     // critical hit chance and reward
-    let critical = Math.floor(Math.random() * 101)
+    let critical = Math.floor(Math.random() * 350)
     if (critical === 1){
         waavVal += (waavPC*50)
         let crit = document.getElementById("critical")
@@ -31,26 +31,7 @@ const waavBTN = () => {
 
 
 
-window.onload=function(){
-    let btnOne = document.getElementById("add1Click")
-    let test = document.getElementById("itemDesc")
-    btnOne.addEventListener("mouseenter", function(){
-        test.classList.add("is-active")
-        this.onmousemove = (e) =>{
-           let top = e.clientY-=25
-           test.style.top = top
-        }
-        test.style.scale = "1.3"
-        let int = setTimeout(count, 100)
-        function count (){
-            test.style.scale = '1'
-        }
-    });
-    btnOne.addEventListener("mouseleave", function(){
-        test.classList.remove("is-active")
-    });
-    
-}
+
 
     
 
@@ -65,6 +46,7 @@ const add1 = () =>
         let addVar = 1 //change!!!!!!!
         waavPC += addVar;
             document.getElementById("waav").innerHTML = `waav: ${waavVal}`
+            
             document.getElementById("item1Cost").innerHTML = Math.floor(cost * 1.5);
             document.getElementById("clickAmount").innerHTML = `${waavPC} waav per click.`
             document.getElementById("clickAmount").style.scale = 1.04

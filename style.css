@@ -16,13 +16,13 @@ button {
 
 /* Table Settings */
 table {
-    border-left: solid 12px rgb(42, 42, 42);
+    border-left: solid 5px rgb(65, 46, 36);
+    background-color:rgb(91, 64, 51);
     padding: 5px;
     text-align: right;
     position: fixed;
     top: 0px;
     right: 0px;
-    background-color:rgb(91, 64, 51);
     font-size: 70px;
     text-align: center;
     display: block;
@@ -90,9 +90,9 @@ td, th {
     padding: 25px 10px;
     margin: 2px 7px;
     border: 5px solid rgb(42, 42, 42);
+    background: rgb(31, 31, 31);
     font-family: monospace;
     font-weight: 500;
-    background: rgb(31, 31, 31);
     color: rgb(255, 246, 194);
     z-index: 5;
 }
@@ -103,7 +103,6 @@ td, th {
 .shopBTNS:active{
     transform: scale(1.01);
 }
-
 
   
 /* Click Stats */
@@ -160,21 +159,24 @@ td, th {
 /*shop desc*/
 #itemDesc{
     position: fixed;
-    padding: 10px;
-    right: -100px;
+    font-size: 21px;
+    font-family: monospace;
+    right: 298px;
     top: 0px;
-    background-color:rgb(91, 64, 51);
     color: rgb(255, 246, 194);
-    padding: 10px;
+    padding: 14px 11px;
     transition: right 0.15s ease-in-out;
-    border-radius: 12px;
-    border: solid 4px rgb(65, 46, 36);
-    transition: 0.2s ease-in-out;
+    border-radius: 12px 0px 0px 12px;
+    border: solid 5px rgb(65, 46, 36);
+    background-color:rgb(91, 64, 51);
+    border-right: 0px;
+    visibility: hidden;
+    z-index: 999;
+    text-align: center;
 }
 
 #itemDesc.is-active{
     top: 0px;
-    right: 320px;
     visibility: visible;
 }
 
